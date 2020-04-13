@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 */
-/* const writeStream = fs.createWriteStream(path.join(__dirname, './logs/requests.log'),
+const writeStream = fs.createWriteStream(path.join(__dirname, './logs/requests.log'),
   { flags: 'a', encoding: 'utf8' });
 const logFormat = ':method\t:url\t:status\t:response-time';
 app.use(morgan(logFormat, {
@@ -38,7 +38,7 @@ app.use(morgan(logFormat, {
       writeStream.write(outMsg);
     },
   },
-})); */
+}));
 
 // app.use(morgan(':method :url :status :response-time ms'));
 /* app.use(morgan('common', {

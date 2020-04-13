@@ -4,7 +4,9 @@
   "description": "Covid-19 Estimator REST API",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start server.js",
+    "monit": "pm2 monit"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,10 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pm2": "^4.2.3"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
