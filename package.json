@@ -1,0 +1,29 @@
+{
+  "name": "covid-19-backend",
+  "version": "1.0.0",
+  "description": "Covid-19 Estimator REST API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jafman/covid-19-estimator-backend.git"
+  },
+  "author": "Jafar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jafman/covid-19-estimator-backend/issues"
+  },
+  "homepage": "https://github.com/jafman/covid-19-estimator-backend#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
