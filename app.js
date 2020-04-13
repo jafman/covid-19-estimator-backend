@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 */
-const writeStream = fs.createWriteStream(path.join(__dirname, './logs/requests.log'),
+/* const writeStream = fs.createWriteStream(path.join(__dirname, './logs/requests.log'),
   { flags: 'a', encoding: 'utf8' });
 const logFormat = ':method\t:url\t:status\t:response-time';
 app.use(morgan(logFormat, {
@@ -36,14 +36,9 @@ app.use(morgan(logFormat, {
       const timeStr = timeInt < 10 ? `0${timeInt.toString()}` : timeInt.toString();
       const outMsg = `${msg.substring(0, lstTabIndex + 1)}${timeStr}ms\n`;
       writeStream.write(outMsg);
-      /* if (time < 10) {
-        time = `0${time.toString()}`;
-      } else {
-        time = time.toString();
-      } */
     },
   },
-}));
+})); */
 
 // app.use(morgan(':method :url :status :response-time ms'));
 /* app.use(morgan('common', {
